@@ -11,6 +11,8 @@ what will we cover?
 - immutability
 - referential transparency
 - putting off side effects
+- how to, and not to, explain to other people
+- where to learn more
 
 What does FP mean to me?
 Stopping things changing underneath my feet that I don't know about
@@ -31,6 +33,7 @@ do a comparison between the mutable and functional solutions
 referential transparency
 example of confusing behaviour
 when you call a function again, you get the same result, and there are no side effects
+as a counter example, our side effecting fib - you call it again, it prints again
 so you can substitute a variable from it with a call to it, and it's all ok
 example with both explicit recursion and map, so I can explain map
 

@@ -18,4 +18,8 @@ def recursiveFib(n)
   n == 0 || n == 1 ? 1 : recursiveFib(n - 1) + recursiveFib(n - 2)
 end
 
-
+def reduceFib(n)
+  def base_case(n)
+    n == 0 || n == 1
+  end
+end
