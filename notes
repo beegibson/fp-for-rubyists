@@ -1,0 +1,65 @@
+# FP for rubyists
+brief bio
+- dev at REA
+- worked on lots of different things there, includinga mix of ruby stuff and functional in scala
+
+what should you take from it?
+What is the very core FP is about, and how it can help with problems you've probably experienced.
+That it's for you and me, not just (stereotypical looking guy) people with a PhD in maths or comp sci
+
+what will we cover?
+- immutability
+- referential transparency
+- putting off side effects
+
+What does FP mean to me?
+Stopping things changing underneath my feet that I don't know about
+
+Immutability
+Gradle story
+then explanation of what it means
+don't change stuff - use only constants
+use the recursion and accumulators instead of loops and mutation
+explain fibonacci problem, with printing solution
+mutable solution
+point out why it's mutable
+explicit recursion immutable solution
+that's pretty verbose - let's use reduce (check for other ruby names)
+explain what reduce is
+do a comparison between the mutable and functional solutions
+
+referential transparency
+example of confusing behaviour
+when you call a function again, you get the same result, and there are no side effects
+so you can substitute a variable from it with a call to it, and it's all ok
+example with both explicit recursion and map, so I can explain map
+
+side effects
+huge amounts of mocking example
+back to fibonacci - the mutable one prints inside the function
+now let's test both!
+mocks for mutable
+just check result for the functional one
+This is a pretty simple example, but I've seen it get out of hand (customer-etl derived eexample)
+huge amounts of mocking, partially due to lots of side effects, is the most common problem I've seen in ruby tests
+so hard to figure out what things are actually testing, and some times it's not much at all
+interfaces change and tests still pass - anything that relies on me remembering to do something is scary
+When doing FP in scala we didn't feel the need to mock anything other than network
+
+Explaining it without eyes glazing over
+- I hope I've managed to
+- don't get too mathematical
+- relate it to stuff they already know
+- focus on examples
+- avoid the scary sounding words like monad, until they understand the concept
+- explaining monad to Venetia story
+- focus on advantages to them
+- be aware when it's not going to be well received
+- discrupt the industry of monad tutorials
+
+Learning more
+- FP coursera
+- functional programming in scala book
+- if you want to learn concepts, go for concept rather than technology focused resources
+- try multiple resources till you find ones that work for you
+- if it seems really hard, it's the resource, not you. Many FP tutorials are examples of how badly it is humanly possible to explain things
