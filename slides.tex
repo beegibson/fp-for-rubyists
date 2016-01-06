@@ -2,6 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \renewcommand{\familydefault}{\sfdefault}
+\usepackage{amsmath}
 
 \title{Functional Programming for rubyists}
 \author{Bianca Gibson}
@@ -76,6 +77,15 @@
 \end{frame}
 
 \begin{frame}
+  \frametitle{Immutability example -- fibonacci}
+  $f(0) = 1$
+
+  $f(1) = 1$
+
+  $f(n) = f(n - 1) +f(n - 2)$
+\end{frame}
+
+\begin{frame}
 \frametitle{Side Effects}
 \begin{itemize}
 \item Separate your logic from your side effects
@@ -87,7 +97,7 @@
 \end{itemize}
 \end{frame}
 
-\begin {frame}
+\begin{frame}
 \frametitle{Referential transparency}
 \begin{itemize}
 \item When you call a function again you get the same result
