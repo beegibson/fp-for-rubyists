@@ -2,17 +2,17 @@
 starts with parts of my clickbait description
 
 brief bio
-- dev at REA
-- worked on lots of different things there, includinga mix of ruby stuff and functional in scala
+- ruby dev at REA, where I started as a grad, and moved around to a variety of teams including functional in scala, ruby teams and a stint doing more infrastructure stuff
 
 what should you take from it?
 What is the very core FP is about, and how it can help with problems you've probably experienced.
 That it's for you and me, not just (stereotypical looking guy) people with a PhD in maths or comp sci
+Show that it's actually pretty straight forward.
 
 what will we cover?
 - immutability
-- referential transparency
 - putting off side effects
+- referential transparency
 - how to, and not to, explain to other people
 - where to learn more
 
@@ -41,7 +41,8 @@ so you can substitute a variable from it with a call to it, and it's all ok
 example with both explicit recursion and map, so I can explain map
 
 side effects
-huge amounts of mocking example
+Unlike what you can easily conclude from many complaints about side effects from functional programmers, we do not hate them, we just want to control them, make them explicit, and know when they are happening. Side effects are the things you actually want your code to do.
+huge amounts of mocking example (zoomed out pic of customer etl)
 back to fibonacci - the mutable one prints inside the function
 now let's test both!
 mocks for mutable
