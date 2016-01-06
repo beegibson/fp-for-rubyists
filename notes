@@ -1,4 +1,6 @@
-# FP for rubyists
+# FP for rubyistsi
+starts with parts of my clickbait description
+
 brief bio
 - dev at REA
 - worked on lots of different things there, includinga mix of ruby stuff and functional in scala
@@ -34,6 +36,7 @@ referential transparency
 example of confusing behaviour
 when you call a function again, you get the same result, and there are no side effects
 as a counter example, our side effecting fib - you call it again, it prints again
+need a more severe example
 so you can substitute a variable from it with a call to it, and it's all ok
 example with both explicit recursion and map, so I can explain map
 

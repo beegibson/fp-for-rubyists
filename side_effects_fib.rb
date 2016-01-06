@@ -10,6 +10,7 @@ def side_effect_fib(n)
       prev = oldcurr
     end
     puts curr
+    curr
   end
 end
 
@@ -27,4 +28,19 @@ end
 
 def formatDisk
   puts "format disk"
+end
+
+def is_base_case_1(n)
+  puts "Is #{side_effect_fib(n)} the base case?"
+  if side_effect_fib(n) == side_effect_fib(0)
+    puts "base case"
+  end
+end
+
+def is_base_case_2(n)
+  result = side_effect_fib(n)
+  puts "Is #{result} the base case?"
+  if result == side_effect_fib(0)
+    puts "base case"
+  end
 end
