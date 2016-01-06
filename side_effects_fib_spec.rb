@@ -1,8 +1,28 @@
 require_relative 'side_effects_fib'
 
 describe '#side_effect_fib' do
-  it 'prints result' do
-    #how do I mock puts?
+
+  before do
+    @logger = double()
+  end
+
+  context 'base case' do
+    before do
+      expect(@logger).to receive(:info).with(1)
+    end
+
+    it 'handles 0 case' do
+      side_effect_fib(0, logger: @logger)
+    end
+
+    it 'handles 1 case' do
+      side_effect_fib(1, logger: @logger)
+    end
+  end
+
+  it 'handles a higher case' do
+    expect(@logger).to receive(:info).with(8)
+    side_effect_fib(5, logger: @logger)
   end
 end
 
