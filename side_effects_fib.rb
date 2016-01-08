@@ -24,28 +24,3 @@ end
 def print_fib(n, logger: Logger.new(STDOUT))
   logger.info(recursive_fib(n))
 end
-
-def evil_fib(n)
-  print_fib(n)
-  format_disk
-end
-
-def format_disk
-  puts "format disk"
-end
-
-def is_base_case_1(n)
-  if side_effect_fib(n) == side_effect_fib(0)
-    "base case"
-  else
-    "Not base case"
-  end
-end
-
-def is_base_case_2(n)
-  if recursive_fib(n) == recursive_fib(0)
-    "base case"
-  else
-    "Not base case"
-  end
-end
