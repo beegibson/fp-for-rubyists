@@ -38,25 +38,29 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{What should you get out of this?}
-  \begin{itemize}
-    \item What is the core of FP?
-    \item How can it help with problems you've experienced?
-    \item How to use it in ruby projects you're already working on
-    \item It's not that hard and complicated
-    \item No neckbeard required
-  \end{itemize}
+  \begin{center}
+    \Huge What should you get out of this?
+  \end{center}
+  %\begin{itemize}
+  %  \item What is the core of FP?
+  %  \item How can it help with problems you've experienced?
+  %  \item How to use it in ruby projects you're already working on
+  %  \item It's not that hard and complicated
+  %  \item No neckbeard required
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{What will we cover}
-  \begin{itemize}
-    \item Immutability
-    \item Putting off side effects
-    \item Referential transparency
-    \item Common traps when explaining to others and avoiding them
-    \item How to learn more
-  \end{itemize}
+  \begin{center}
+    \Huge What will we cover
+  \end{center}
+  %\begin{itemize}
+  %  \item Immutability
+  %  \item Putting off side effects
+  %  \item Referential transparency
+  %  \item Common traps when explaining to others and avoiding them
+  %  \item How to learn more
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -67,14 +71,16 @@
 % tell gradle story here
 
 \begin{frame}
-  \frametitle{Immutability}
-  \begin{itemize}
-    \item Don't change any values, use only constants
-    \item Instead of changing create a new one
-    \item Recursion and accumulators over loops and mutation
-    \item Confusion over passing by value or reference? Gone.
-    \item Ever thought about using a ! or not? That's worrying about mutation
-  \end{itemize}
+  \begin{center}
+    \Huge Immutability
+  \end{center}
+  %\begin{itemize}
+  %  \item Don't change any values, use only constants
+  %  \item Instead of changing create a new one
+  %  \item Recursion and accumulators over loops and mutation
+  %  \item Confusion over passing by value or reference? Gone.
+  %  \item Ever thought about using a ! or not? That's worrying about mutation
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -92,25 +98,29 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{What are side effects?}
-  \begin{itemize}
-    \item When your code affects the outside world
-    \item Printing
-    \item Writing to disk
-    \item Network calls
-  \end{itemize}
+  \begin{center}
+    \Huge What are side effects?
+  \end{center}
+  %\begin{itemize}
+  %  \item When your code affects the outside world
+  %  \item Printing
+  %  \item Writing to disk
+  %  \item Network calls
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{What do they have to do with FP?}
-  \begin{itemize}
-    \item Separate your logic from your side effects
-    \item Push your side effects out in to the edge of your system
-    \item In the middle of your system make representations of the side effects
-    \item Makes the core easier to test and reason about
-    \item No side effects to stub $\rightarrow$ simpler tests
-    \item Push hard testing out to the edge
-  \end{itemize}
+  \begin{center}
+    \Huge What do they have to do with FP?
+  \end{center}
+  %\begin{itemize}
+  %  \item Separate your logic from your side effects
+  %  \item Push your side effects out in to the edge of your system
+  %  \item In the middle of your system make representations of the side effects
+  %  \item Makes the core easier to test and reason about
+  %  \item No side effects to stub $\rightarrow$ simpler tests
+  %  \item Push hard testing out to the edge
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -120,15 +130,17 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Referential transparency}
-  \begin{itemize}
-    \item The combination of immutability and no side effects
-    \item When you call a function again you get the same result
-    \item Includes no side effects
-    \item You can substitute the saved result of the function for the call
-    \item Everything a function does is represented by the result
-    \item Nothing unexpected!
-  \end{itemize}
+  \begin{center}
+    \Huge Referential transparency
+  \end{center}
+  %\begin{itemize}
+  %  \item The combination of immutability and no side effects
+  %  \item When you call a function again you get the same result
+  %  \item Includes no side effects
+  %  \item You can substitute the saved result of the function for the call
+  %  \item Everything a function does is represented by the result
+  %  \item Nothing unexpected!
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -138,15 +150,17 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Teaching FP}
-  \begin{itemize}
-    \item Don't get too mathematical
-    \item Relate to stuff they already know
-    \item Focus on examples
-    \item Avoid the scary words like monad until they understand it
-    \item Focus on advantages to them
-    \item Pick your battles
-  \end{itemize}
+  \begin{center}
+    \Huge Teaching FP
+  \end{center}
+  %\begin{itemize}
+  %  \item Don't get too mathematical
+  %  \item Relate to stuff they already know
+  %  \item Focus on examples
+  %  \item Avoid the scary words like monad until they understand it
+  %  \item Focus on advantages to them
+  %  \item Pick your battles
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -157,9 +171,6 @@
     \item Refactoring Ruby with Monads by Tom Stuart
     \item github.com/cwmyers/FunctionalTraining
     \item github.com/NICTA/course
-    \item If you're after concepts, go for concept oriented resources
-    \item Try multiple sources before you find one for you
-    \item If it seems really hard, probably the resource, not you.
   \end{itemize}
 \end{frame}
 
