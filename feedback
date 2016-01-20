@@ -1,0 +1,31 @@
+replace fib example with totalling order
+clarify gradle story
+explain bang better
+neckbeard photo
+try reducing slides down to just phrases
+
+is it hard in ruby?
+may not be as easy in more functional languages, but doesn't mean you can't use the ideas
+
+TCO explanation
+
+questions:
+Is it hard and not worth doing in ruby
+What's a monad
+would you recommend purely functional in ruby?
+
+conflating static types and functional
+erlang and elixir are functional - no shared mutable state
+but no static types
+the types may marry nicely, and be helpful
+and benefit from each on their own
+got stuff like map and filter
+got proc - first class functions, just not pretty
+denigned with option in mind
+with more immutable in standard library, moving that way
+eg frozen primitives
+
+how to apply functional to make ruby better, and apply the tools of...
+make it clearer that I want them to incorporate it in their ruby
+
+Remove how to teach, and talk about how ruby is moving in that way

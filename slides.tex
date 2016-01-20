@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 
 \usepackage[utf8]{inputenc}
 \renewcommand{\familydefault}{\sfdefault}
@@ -32,31 +32,35 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Who am I?}
   \begin{figure}[p]
-    \includegraphics[width=0.8\textwidth]{./assets/portrait.jpg}
+    \includegraphics[width=0.4\textwidth]{./assets/portrait.jpg}
   \end{figure}
 \end{frame}
 
 \begin{frame}
-  \frametitle{What should you get out of this?}
-  \begin{itemize}
-    \item What is the core of FP?
-    \item How can it help with problems you've experienced?
-    \item It's not that hard and complicated
-    \item No neckbeard required
-  \end{itemize}
+  \begin{center}
+    \Huge What should you get out of this?
+  \end{center}
+  %\begin{itemize}
+  %  \item What is the core of FP?
+  %  \item How can it help with problems you've experienced?
+  %  \item How to use it in ruby projects you're already working on
+  %  \item It's not that hard and complicated
+  %  \item No neckbeard required
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{What will we cover}
-  \begin{itemize}
-    \item Immutability
-    \item Putting off side effects
-    \item Referential transparency
-    \item Common traps when explaining to others and avoiding them
-    \item How to learn more
-  \end{itemize}
+  \begin{center}
+    \Huge What will we cover
+  \end{center}
+  %\begin{itemize}
+  %  \item Immutability
+  %  \item Putting off side effects
+  %  \item Referential transparency
+  %  \item Common traps when explaining to others and avoiding them
+  %  \item How to learn more
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -67,44 +71,23 @@
 % tell gradle story here
 
 \begin{frame}
-  \frametitle{Immutability}
-  \begin{itemize}
-    \item Don't change any values, use only constants
-    \item Instead of changing create a new one
-    \item Recursion and accumulators over loops and mutation
-    \item Confusion over passing by value or reference? Gone.
-    \item Use ! to mutate in ruby
-    \item Unexpected mutation can be very confusing
-  \end{itemize}
+  \begin{center}
+    \Huge Immutability
+  \end{center}
+  %\begin{itemize}
+  %  \item Don't change any values, use only constants
+  %  \item Instead of changing create a new one
+  %  \item Recursion and accumulators over loops and mutation
+  %  \item Confusion over passing by value or reference? Gone.
+  %  \item Ever thought about using a ! or not? That's worrying about mutation
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Immutability example -- fibonacci}
-  $ F_0 = 0,\; F_1 = 1$
-
-  $F_n = F_{n-1} + F_{n-2}$
-\end{frame}
-
-\begin{frame}
-  \frametitle{What are side effects?}
-  \begin{itemize}
-    \item When your code affects the outside world
-    \item Printing
-    \item Writing to disk
-    \item Network calls
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \frametitle{What do they have to do with FP?}
-  \begin{itemize}
-    \item Separate your logic from your side effects
-    \item Push your side effects out in to the edge of your system
-    \item In the middle of your system make representations of the side effects
-    \item Makes the core easier to test and reason about
-    \item No side effects to stub $\rightarrow$ simpler tests
-    \item Push hard testing out to the edge
-  \end{itemize}
+  \begin{figure}[p]
+    \includegraphics[width=0.8\textwidth]{./assets/confused.jpg}
+  \end{figure}
+  \tiny Image from CollegeDegrees360, license https://creativecommons.org/licenses/by-sa/2.0/
 \end{frame}
 
 \begin{frame}
@@ -114,15 +97,29 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Referential transparency}
-  \begin{itemize}
-    \item The combination of immutability and no side effects
-    \item When you call a function again you get the same result
-    \item Includes no side effects
-    \item You can substitute the saved result of the function for the call
-    \item Everything a function does is represented by the result
-    \item Nothing unexpected!
-  \end{itemize}
+  \begin{center}
+    \Huge What are side effects?
+  \end{center}
+  %\begin{itemize}
+  %  \item When your code affects the outside world
+  %  \item Printing
+  %  \item Writing to disk
+  %  \item Network calls
+  %\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \Huge What do they have to do with FP?
+  \end{center}
+  %\begin{itemize}
+  %  \item Separate your logic from your side effects
+  %  \item Push your side effects out in to the edge of your system
+  %  \item In the middle of your system make representations of the side effects
+  %  \item Makes the core easier to test and reason about
+  %  \item No side effects to stub $\rightarrow$ simpler tests
+  %  \item Push hard testing out to the edge
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -132,15 +129,37 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Teaching FP}
-  \begin{itemize}
-    \item Don't get too mathematical
-    \item Relate to stuff they already know
-    \item Focus on examples
-    \item Avoid the scary words like monad until they understand it
-    \item Focus on advantages to them
-    \item Pick your battles
-  \end{itemize}
+  \begin{center}
+    \Huge Referential transparency
+  \end{center}
+  %\begin{itemize}
+  %  \item The combination of immutability and no side effects
+  %  \item When you call a function again you get the same result
+  %  \item Includes no side effects
+  %  \item You can substitute the saved result of the function for the call
+  %  \item Everything a function does is represented by the result
+  %  \item Nothing unexpected!
+  %\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \Huge Example
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \Huge Teaching FP
+  \end{center}
+  %\begin{itemize}
+  %  \item Don't get too mathematical
+  %  \item Relate to stuff they already know
+  %  \item Focus on examples
+  %  \item Avoid the scary words like monad until they understand it
+  %  \item Focus on advantages to them
+  %  \item Pick your battles
+  %\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -151,9 +170,6 @@
     \item Refactoring Ruby with Monads by Tom Stuart
     \item github.com/cwmyers/FunctionalTraining
     \item github.com/NICTA/course
-    \item If you're after concepts, go for concept oriented resources
-    \item Try multiple sources before you find one for you
-    \item If it seems really hard, probably the resource, not you.
   \end{itemize}
 \end{frame}
 
@@ -166,6 +182,12 @@
 \begin{frame}
   \begin{center}
     \Huge Stop things changing behind our backs
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \Huge Follow up and feedback to bianca.gibson@rea-group.com
   \end{center}
 \end{frame}
 
