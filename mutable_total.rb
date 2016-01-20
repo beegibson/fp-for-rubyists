@@ -5,8 +5,8 @@ def mutable_total_cart(items)
   end
 end
 
-def mutable_total_cart(items)
-  items.inject(0) { |total, item| total = total + item.cost}
+def immutable_total_cart(items)
+  items.inject(0) { |total, item| total += item.cost}
 end
 
 class Item

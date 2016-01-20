@@ -9,7 +9,7 @@ def mutable_total_cart(items, logger: Logger.new)
 end
 
 def total_cart(items)
-  items.inject(0) { |total, item| total = total + item.cost}
+  items.inject(0) { |total, item| total += item.cost}
 end
 
 def print_total_cart(items, logger: Logger.new)
