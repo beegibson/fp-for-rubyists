@@ -29,3 +29,18 @@ how to apply functional to make ruby better, and apply the tools of...
 make it clearer that I want them to incorporate it in their ruby
 
 Remove how to teach, and talk about how ruby is moving in that way
+
+questions for the audience:
+shopping cart total example - should I have an explicit recursive solution too?
+
+another more involved example
+more substantial? practical?
+simple etl?
+chaining? that will be in the etl
+testing!
+
+explicit recursion in first example
+mention fold to make it clearer for some
+
+split screen last example
+more around purpose - avoid things like mocking hell, but not really for greenfields functional
