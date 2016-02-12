@@ -8,17 +8,8 @@ def mutable_total_cart(items, logger: Logger.new)
   logger.info(total)
 end
 
-def recursive_total_cart(items)
-  head, *tail = items
-  if tail.empty?
-    head.cost
-  else
-    head.cost + recursive_total_cart(tail)
-  end
-end
-
 def total_cart(items)
-  items.inject(0) { |total, item| total += item.cost}
+  items.inject(0) { |total, item| total + item.cost}
 end
 
 def print_total_cart(items, logger: Logger.new)

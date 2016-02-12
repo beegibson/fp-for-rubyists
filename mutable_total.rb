@@ -3,6 +3,7 @@ def mutable_total_cart(items)
   items.each do |item|
     total += item.cost
   end
+  total
 end
 
 def recursive_total_cart(items)
@@ -15,10 +16,11 @@ def recursive_total_cart(items)
 end
 
 def immutable_total_cart(items)
-  items.inject(0) { |total, item| total += item.cost}
+  items.inject(0) { |total, item| total + item.cost}
 end
 
 class Item
+  attr_reader :cost
   def initialize(cost)
     @cost = cost
   end
